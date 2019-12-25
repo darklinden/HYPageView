@@ -531,6 +531,7 @@
                 _viewControllers[page] = @"HYPAGEVIEW_AlreadyCreated";
 
                 [_rootViewController addChildViewController:viewController];
+                [viewController willShowInHYPageView:page];
             }
         }
     }
