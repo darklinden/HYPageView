@@ -19,11 +19,11 @@
     return nil;
 }
 
-- (void)willHideInHYPageView {
+- (void)willHideInHYPageView:(NSUInteger)index {
 
 }
 
-- (void)willShowInHYPageView {
+- (void)willShowInHYPageView:(NSUInteger)index {
     
 }
 

@@ -470,9 +470,9 @@
                     if ([[obj class] isSubclassOfClass:[HYPageViewSubViewController class]]) {
                         HYPageViewSubViewController *viewController = obj;
                         if (j == page) {
-                            [viewController willShowInHYPageView];
+                            [viewController willShowInHYPageView:j];
                         } else {
-                            [viewController willHideInHYPageView];
+                            [viewController willHideInHYPageView:j];
                         }
                         
                         if ([viewController.view.class isSubclassOfClass:[UIScrollView class]]) {

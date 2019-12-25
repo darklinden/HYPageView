@@ -14,9 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)create;
 
-- (void)willShowInHYPageView;
+- (void)willShowInHYPageView:(NSUInteger)index;
 
-- (void)willHideInHYPageView;
+- (void)willHideInHYPageView:(NSUInteger)index;
 
 @end
 
