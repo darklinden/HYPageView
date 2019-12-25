@@ -8,22 +8,20 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "FirstViewViewController.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    ViewController *viewController = [[ViewController alloc] init];
-    FirstViewViewController *f = [FirstViewViewController new];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    ViewController *viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+//    FirstViewViewController *f = [FirstViewViewController new];
+//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
     self.window.rootViewController = viewController;
     
     self.window.backgroundColor = [UIColor whiteColor];
